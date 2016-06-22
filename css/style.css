@@ -15,6 +15,10 @@ html, body{
   .jumbotron .container{
     padding-top: 10%;
     }
+    .navbar-nav a{
+  background-color:#2c3e50 !important;
+  color:#fff !important;
+}
   }
 
 @media only screen and (min-width: 1178px){
@@ -37,15 +41,50 @@ body{
 }
 
 nav{
+  background-color: #fff !important;
+  border-color: #fff !important;
   margin:0;
   padding: 40px 0 20px 0;
 
 }
 
-.logo:hover{
-background-color:inherit !important;
-color: inherit !important;
+.container{
+  margin:0;
+  width:inherit;
+  padding:0;
 }
+.navbar-header{
+  float: none;
+  
+  margin: 0 0 !important;
+
+  text-align:center;
+}
+
+.navbar .navbar-header a{
+  float:none;
+  }
+
+
+.logo:hover{
+
+opacity:0.7;
+}
+
+
+
+.navbar-nav{
+float:none;
+margin:0;
+text-align: center;
+}
+
+.navbar-nav li{
+  float:none;
+  display: inline-block;
+  color: #0f8cea;
+}
+
 
 nav ul{
 
@@ -69,6 +108,7 @@ nav a:visited{
   color:#000;
   text-decoration: none;
 }
+
 nav a:hover{
   color:#fff;
   background-color: #000;
@@ -81,6 +121,10 @@ nav a:hover{
   height: 400px;
   margin:10px 0 40px 0;
   padding-top: 150px;
+  background-color:#2479a3;
+  background-image: url(jumb.png)
+
+  ; 
 
 }
 
@@ -138,10 +182,23 @@ nav a:hover{
 
 .it{
   background-color: #18bc9c;
+  background-image: url(it.png);
+  background-position: 20% 15%;
+background-repeat: no-repeat;
+margin-bottom: 150px;
+background-attachment: fixed;
+
+
+
+
+
 }
 
 .engineering{
+
   background-color: #2c3e50;
+  background-image: url(eng.png);
+  background-attachment: fixed;
 }
 
 
@@ -156,7 +213,7 @@ nav a:hover{
   margin-top: 100px;
   padding: 50px 0 50px 0;
   color: #fff;
-  background-color: #233140;
+  background-color: #2479a3;
 }
 .contact ul{
   list-style-type: none;
