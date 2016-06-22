@@ -184,9 +184,8 @@ nav a:hover{
   background-color: #18bc9c;
   background-image: url(it.png);
   background-position: 20% 15%;
-background-repeat: no-repeat;
-margin-bottom: 150px;
-background-attachment: fixed;
+  margin-bottom: 150px;
+  background-attachment: fixed;
 
 
 
