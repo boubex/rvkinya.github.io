@@ -1,60 +1,12 @@
 ---
-layout: default
+layout: page
+title: Latest Posts
+excerpt: 
+search_omit: true
 ---
 
-<div class="jumbotron">
-  <div class="container text-center">
-
-
-    <a href="#it"><button class="btn btn-lg it">IT Solutions &<br> consultancy</button></a>
-    <a href="#engineering"><button class="btn btn-lg engineering ">Architectural & <br>engineering consultancy</button></a>
-
-  </div>
-</div>
-
-
-<div class="services text-center" id="services">
-  <h2>Our Services</h2>
-  <hr>
-  <div class="row">
-    <div class="container it" id="it">
-  <div class="thumbnail col-md-6">
-    <div class="caption "><h3>IT Solutions</h3></div>
-  </div>
-  <div class="col-md-6">
-    <p class="text-justify">CITES offers IT solutions to companies and individuals that need them.<br/>We work in different lines of field such as software engeneering deployment & mantainence,web services,hardware full equipment supplies & mantainance</p>
-  </div>
-</div>
-</div>
-
-<div class="row" >
-  <div class="container engineering" id="engineering">
-  <div class="col-md-6">
-    <p class="text-justify">CITES offers Architectual & engineering consultancy services to companies and
-       individuals that need them.<br/>We have a team of capable engineers that will bring your
-       architectural visions to life.</p>
-  </div>
-  <div class="thumbnail  col-md-6">
-    <div class="caption"><h3>Architectual & consultancy serveices</h3></div>
-  </div>
-</div>
-</div>
-</div>
-
-<div class="about-us text-center" id="about">
-  <h2 style="margin-top: 40px">About Us</h2>
-  <hr>
-  <div class="container text-justify" style="width:inherit">
-<p>CITES is a company that covers both construction & information technology,we are a firm that
-  aims to deliver the best service to its customers who need to integrate
-  technology into their businesses or to those in need of construction services</p>
-  </div>
-</div>
-
-<div class="contact" id="contact">
-  <h2 class="text-center">Contact Us</h2>
-  <ul class="text-center">
-    <li><i class="fa  fa-envelope"></i><br style="margin-top: 20px">citesltd@gmail.com</li>
-      <li><i class="fa fa-phone"></i><br style="margin-top: 20px">+250783041997 </li>
-  <ul>
-</div>
+<ul class="post-list">
+{% for post in site.posts limit:10 %}
+  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
