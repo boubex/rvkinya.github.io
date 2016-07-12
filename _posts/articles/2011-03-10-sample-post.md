@@ -95,8 +95,4 @@ Make any link standout more when applying the `.btn` class.
 
 <div markdown="0"><a href="#" class="btn">This is a button</a></div>
 
-
-<!-- LikeBtn.com BEGIN -->
-<span class="likebtn-wrapper" data-theme="large" data-identifier="item_1" data-loader_show="true"></span>
-<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
-<!-- LikeBtn.com END -->
+<iframe src="http://www.tvweb360.tv/live_embed_player_550px_en" width="550" height="365" frameborder="0" scrolling="no"></iframe>
