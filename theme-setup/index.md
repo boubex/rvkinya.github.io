@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Positive and Negative Review Board
+title: ibitekerezo bikunzwe nibyanze
 excerpt: "Instructions on how to install and customize the Jekyll theme So Simple."
 modified: 2016-06-01T14:07:07-04:00
 image:
@@ -11,7 +11,7 @@ image:
 
 <!-- Search form -->
 <form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
-  <label for="q">Search {{ site.title }} for:</label>
+  <label for="q">Shakisha {{ site.title }} for:</label>
   <input type="search" name="q" id="q" placeholder="What are you looking for?" data-search-input id="goog-wm-qt" autofocus />
   <input type="submit" value="Search" id="goog-wm-sb" />
 </form>
